@@ -14,8 +14,8 @@ namespace WineTest.Pages
         //}
 
 
-        [BindProperty]
-        public WineDTO? AboutUs
+        //[BindProperty]
+        public WineDTO? AboutUs;
 
 
 
