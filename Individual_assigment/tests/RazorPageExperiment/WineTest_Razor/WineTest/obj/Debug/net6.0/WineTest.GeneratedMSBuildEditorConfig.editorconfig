@@ -16,12 +16,12 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/tests/RazorPageExperiment/WineTest_Razor/WineTest/Pages/About us.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXQgdXMuY3NodG1s
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/tests/RazorPageExperiment/WineTest_Razor/WineTest/Pages/About_us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRfdXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/tests/RazorPageExperiment/WineTest_Razor/WineTest/Pages/Contact us.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdCB1cy5jc2h0bWw=
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/tests/RazorPageExperiment/WineTest_Razor/WineTest/Pages/Contact_us.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdF91cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/tests/RazorPageExperiment/WineTest_Razor/WineTest/Pages/Error.cshtml]

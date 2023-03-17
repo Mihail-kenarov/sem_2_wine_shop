@@ -1,0 +1,12 @@
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\bin\Debug\net6.0\WineLibrary.deps.json
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\bin\Debug\net6.0\WineLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\bin\Debug\net6.0\WineLibrary.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.csproj.AssemblyReference.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.AssemblyInfoInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.AssemblyInfo.cs
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\refint\WineLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\WineLibrary.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineLibrary\obj\Debug\net6.0\ref\WineLibrary.dll

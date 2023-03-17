@@ -6,17 +6,12 @@ namespace WineTest.Pages
 {
     public class About_usModel : PageModel
     {
-        //private readonly ILogger<PrivacyModel> _logger;
+        private readonly ILogger<About_usModel> _logger;
 
-        //public About_usModel(ILogger<PrivacyModel> logger)
-        //{
-        //    _logger = logger;
-        //}
-
-
-        //[BindProperty]
-        public WineDTO? AboutUs;
-
+        public About_usModel(ILogger<About_usModel> logger)
+        {
+            _logger = logger;
+        }
 
 
 

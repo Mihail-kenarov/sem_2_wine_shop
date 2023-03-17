@@ -13,6 +13,26 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\images\\7g_wines.png",
+      "PackagePath": "staticwebassets\\images\\7g_wines.png"
+    },
+    {
+      "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\images\\Wine_1.jpg",
+      "PackagePath": "staticwebassets\\images\\Wine_1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\images\\Wine_2.jpg",
+      "PackagePath": "staticwebassets\\images\\Wine_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\images\\Wine_3.jpg",
+      "PackagePath": "staticwebassets\\images\\Wine_3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\images\\Wine_4.jpg",
+      "PackagePath": "staticwebassets\\images\\Wine_4.jpg"
+    },
+    {
       "Id": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\tests\\RazorPageExperiment\\WineTest_Razor\\WineTest\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

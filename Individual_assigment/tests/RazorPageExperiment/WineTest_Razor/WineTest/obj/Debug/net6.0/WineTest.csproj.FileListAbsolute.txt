@@ -107,3 +107,8 @@ C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigmen
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\obj\Debug\net6.0\scopedcss\projectbundle\WineTest.bundle.scp.css
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\obj\Debug\net6.0\WineTest.genruntimeconfig.cache
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\obj\Debug\net6.0\ref\WineTest.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\bin\Debug\net6.0\MediatR.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\bin\Debug\net6.0\MediatR.Contracts.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\bin\Debug\net6.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\tests\RazorPageExperiment\WineTest_Razor\WineTest\obj\Debug\net6.0\WineTest.csproj.CopyComplete
