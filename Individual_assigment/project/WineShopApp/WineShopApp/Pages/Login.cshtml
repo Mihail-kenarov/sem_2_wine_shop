@@ -1,0 +1,28 @@
+﻿@page
+@model WineShopApp.Pages.LoginModel
+@{
+}
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h4>Login</h4>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        <div class="form-group">
+                            <label asp-for="UserName">Name:</label>
+                            <input asp-for="UserName" class="form-control" placeholder="Enter your username">
+                        </div>
+                        <div class="form-group">
+                            <label asp-for="Password">Password:</label>
+                            <input asp-for="Password" type="password"class="form-control" placeholder="Enter your password">
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-block mt-3" value="Login"> 
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

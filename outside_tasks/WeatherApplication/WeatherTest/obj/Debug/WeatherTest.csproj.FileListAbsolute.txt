@@ -1,0 +1,2 @@
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherTest\obj\Debug\WeatherTest.csproj.AssemblyReference.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherTest\obj\Debug\WeatherTest.csproj.CoreCompileInputs.cache

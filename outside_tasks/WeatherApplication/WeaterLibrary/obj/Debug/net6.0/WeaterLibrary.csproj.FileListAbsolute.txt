@@ -1,0 +1,12 @@
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\bin\Debug\net6.0\WeaterLibrary.deps.json
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\bin\Debug\net6.0\WeaterLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\bin\Debug\net6.0\WeaterLibrary.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.csproj.AssemblyReference.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.AssemblyInfoInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.AssemblyInfo.cs
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\refint\WeaterLibrary.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\WeaterLibrary.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeaterLibrary\obj\Debug\net6.0\ref\WeaterLibrary.dll
