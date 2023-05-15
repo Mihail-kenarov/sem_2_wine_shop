@@ -1,0 +1,101 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4" style="color:aliceblue">Welcome, to 7G  wines</h1>
+   
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4500">
+    <ol class="carousel-indicators">
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="~/images/slideshow.jpg" class="d-block w-100" alt="Slide 1">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/slideshow_2.jpg" class="d-block w-100" alt="Slide 2">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="~/images/slideshow_3.jpg" class="d-block w-100" alt="Slide 3">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+        </div>
+    </div>
+    </div>
+    <br />
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <a  asp-page="/Contact_us">
+                    <img class="card-img-top" src="~/images/wines_welcome.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Contact us</h5>
+                    <p class="card-text">Feel free to contact us anytime and we will make sure to reply to you as soon as possible</p>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a asp-page="/Wines">
+                    <img class="card-img-top" src="~/images/wines_welcome2.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Wines</h5>
+                    <p class="card-text">Enjoy the selection of wines that we have to offer and expect changes soon!</p>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <a asp-page ="/About_us">
+                    <img class="card-img-top" src="~/images/wines_welcome3.jpg" alt="Card image cap">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">About us</h5>
+                    <p class="card-text">Let us introduce ourselves and help you know more about us</p>
+                </div>
+                <div class="card-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid containers_welcome" style="margin-top:25px;">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card border-0 shadow mb-4">
+                <div class="card-body">
+                    <h5 class="card-title welcome_title">Wine and Food Pairing at the Vineyard</h5>
+                    <p class="card-text">Join us on May 15th for a delicious wine and food pairing event at our vineyard. Sample our award-winning wines alongside expertly crafted dishes designed to complement each varietal. Our knowledgeable staff will guide you through the tasting, offering insights into the history and unique qualities of each wine. Don't miss this opportunity to indulge in the ultimate culinary experience amidst the stunning natural beauty of our vineyard.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card border-0 shadow mb-4">
+                <div class="card-body">
+                    <h5 class="card-title welcome_title">Wine Tasting and Live Music at the Winery</h5>
+                    <p class="card-text">Mark your calendars for June 12th and join us for a day of wine tasting and live music at our winery. Sample our latest vintages, including our limited edition reserve wines, and enjoy the smooth sounds of local musicians. Our picturesque winery provides the perfect backdrop for a relaxing day spent sipping on fine wines and enjoying the company of friends and family. Come and experience the magic of wine country.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>>

@@ -1,0 +1,28 @@
+﻿@page
+@using BusinessLogic.Entities;
+@using BusinessLogic;
+
+@model WineShopApp.Pages.WinesModel
+@{
+	ViewData["Title"] = "Wines";
+}
+
+
+<div class="row card_spacing" style="margin:auto 50px;">
+    @foreach (Wine wine in Model.Wines)
+    {
+        var Photopath = "~/images/" + wine.PhotoPath;
+
+        <div class="col-md-4">
+            <div class="card mb-3">
+                <img src="@Photopath" class="card-img-top imageShown" alt="@wine.Name" asp-append-version="true">
+                <div class="card-body">
+                    <h5 class="card-title">@wine.Name</h5>
+                    <p class="card-text">@wine.Price</p>
+                    <a asp-page="/WineMoreDetails" asp-route-ID="@wine.Id" class="btn btn-primary">View</a>
+                    <a href="#" class="btn btn-secondary">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

@@ -1,0 +1,27 @@
+﻿@page
+@model WineShopApp.Pages.WineMoreDetailsModel
+@{
+	ViewData["Title"] = "Wines";
+    var Photopath = "~/images/" + Model.Wine.PhotoPath;
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8">
+            <img src="@Photopath" alt="Big Image" class="img-fluid" asp-append-version="true">
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">@Model.Wine.Name</h5>
+                    <p class="card-text">@Model.Wine.Price</p>
+                    <p class="card-text">@Model.Wine.Classification</p>
+                    <p class="card-text">@Model.Wine.Description</p>
+                    <a asp-page="/Wines"  class="btn btn-primary">Go back</a>
+                    <button type="button" class="btn btn-secondary">Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+>

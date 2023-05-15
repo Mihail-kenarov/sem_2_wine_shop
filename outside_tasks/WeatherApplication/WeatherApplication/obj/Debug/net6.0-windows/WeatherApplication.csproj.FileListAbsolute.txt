@@ -1,0 +1,17 @@
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\bin\Debug\net6.0-windows\WeatherApplication.exe
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\bin\Debug\net6.0-windows\WeatherApplication.deps.json
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\bin\Debug\net6.0-windows\WeatherApplication.runtimeconfig.json
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\bin\Debug\net6.0-windows\WeatherApplication.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\bin\Debug\net6.0-windows\WeatherApplication.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.csproj.AssemblyReference.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.Form1.resources
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.csproj.GenerateResource.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.AssemblyInfoInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.AssemblyInfo.cs
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.csproj.CoreCompileInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\refint\WeatherApplication.dll
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.pdb
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\WeatherApplication.genruntimeconfig.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\outside_tasks\WeatherApplication\WeatherApplication\obj\Debug\net6.0-windows\ref\WeatherApplication.dll

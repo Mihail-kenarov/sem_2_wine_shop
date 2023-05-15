@@ -1,0 +1,30 @@
+﻿@page
+@model WineShopApp.Pages.Contact_usModel
+@{
+	ViewData["Title"] = "Contact us";
+}
+
+<patrial name ="_ValidationSciptsPartial"/>
+<div class="container contact_container">
+	<h2>Contact Us</h2>
+	<form method="post">
+		<div class="form-group">
+			<label asp-for="ContactFeedback.Name">Name:</label>
+			<span asp-validation-for="ContactFeedback.Name"></span>
+			<input asp-for="ContactFeedback.Name" class="form-control" id="ContactFeedback.name" placeholder="Enter your name" name="name">
+		</div>
+		<div class="form-group">
+			<label asp-for="ContactFeedback.Email">Email:</label>
+			<span asp-validation-for="ContactFeedback.Email"></span>
+			<input asp-for="ContactFeedback.Email" class="form-control" id="ContactFeedback.email" placeholder="Enter your email" name="email">
+		</div>
+		<div class="form-group">
+			<label asp-for="ContactFeedback.Subject">Message:</label>
+			<span asp-validation-for="ContactFeedback.Subject"></span>
+			<input asp-for="ContactFeedback.Subject" class="form-control" id="ContactFeedback.Subject" placeholder="Enter your message" name="message" rows="5">
+		</div>
+		<div class="form-group">
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</div>
+	</form>
+</div>

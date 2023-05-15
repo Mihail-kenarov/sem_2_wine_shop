@@ -1,0 +1,68 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-color: #1a1a1a;
+}
+
+.imageShown {
+    height: 400px;
+    width: auto;
+}
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.form-group:last-child {
+    margin-bottom: 20px;
+}
+
+.contact_container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    height: 350px;
+}
+.carousel-item img {
+    height: 350px;
+    width: 1000px;
+    object-fit: contain;
+}
+
+.carousel-item active {
+    width: 1000px;
+}
+
+.containers_welcome {
+    background-color: transparent;
+}
+
+.welcome_title {
+    text-align: center;
+}
+
