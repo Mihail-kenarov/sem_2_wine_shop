@@ -14,6 +14,7 @@ namespace BusinessLogic.ManagerInterfaces
         void DeleteAccessory(int accessory_id);
         List<Accessory> GetAll();
         string AccessoryInfo(Accessory accessory);
+        Accessory GetByID(int accessory_id);
 
 
     }

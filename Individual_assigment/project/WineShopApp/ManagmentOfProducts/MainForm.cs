@@ -69,7 +69,7 @@ namespace ManagmentOfProducts
 
         private void btnCollectionsMenu_Click(object sender, EventArgs e)
         {
-            ActivateButton(sender);
+            OpenChildForm(new Forms.OrderForm(), sender);
         }
 
         private void btnAccessoriesMenu_Click(object sender, EventArgs e)
@@ -79,7 +79,7 @@ namespace ManagmentOfProducts
 
         private void btnUsersMenu_Click(object sender, EventArgs e)
         {
-           OpenChildForm(new Forms.UserForm(), sender);
+            OpenChildForm(new Forms.UserForm(), sender);
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -91,5 +91,18 @@ namespace ManagmentOfProducts
         {
             OpenChildForm(new Forms.WineCellersForm(), sender);
         }
+
+        public void PrepareForEmployeeLogin()
+        {
+            btnUsersMenu.Visible = false;
+            btnWineCellerMenu.Visible = false;
+        }
+
+
+
+
+
+
+
     }
 }

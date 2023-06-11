@@ -45,7 +45,7 @@ namespace UnitTesting
             _accessoryManager.DeleteAccessory(accessoryIdToDelete);
 
             // Assert
-            Assert.IsNull(_accessoryRepo.GetAccessoryById(accessoryIdToDelete));
+            Assert.IsNull(_accessoryRepo.GetById(accessoryIdToDelete));
         }
 
         [TestMethod]
@@ -69,7 +69,7 @@ namespace UnitTesting
             _accessoryManager.UpdateAccessory(accessoryToUpdate);
 
             // Assert
-            Accessory updatedAccessory = _accessoryRepo.GetAccessoryById(accessoryToUpdate.Id);
+            Accessory updatedAccessory = _accessoryRepo.GetById(accessoryToUpdate.Id);
             Assert.IsNotNull(updatedAccessory);
             Assert.AreEqual(accessoryToUpdate.Amount, updatedAccessory.Amount);
             Assert.AreEqual(accessoryToUpdate.Name, updatedAccessory.Name);

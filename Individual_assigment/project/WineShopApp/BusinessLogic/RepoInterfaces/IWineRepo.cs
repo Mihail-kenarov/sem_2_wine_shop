@@ -20,7 +20,7 @@ namespace BusinessLogic.Interfaces
 
         Wine GetById(int wine_id);
 
-      
+     
 
     }
 }

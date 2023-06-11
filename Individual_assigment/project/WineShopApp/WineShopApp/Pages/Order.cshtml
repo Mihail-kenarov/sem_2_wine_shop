@@ -1,0 +1,50 @@
+﻿@page
+@model WineShopApp.Pages.OrderModel
+@{
+}
+@if (Model.order.Products.Count != 0)
+{
+    <table class="product-list">
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+    @foreach (var product in Model.order.Products)
+    {
+       
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.Description</td>
+                    <td>@product.Price</td>
+                </tr>
+    }
+       
+    </table>
+
+    
+    <form method="post">
+        <label asp-for="@Model.EnteredLocation">Address:</label>
+        <input asp-for="@Model.EnteredLocation" class="form-control" placeholder="Enter the full address of the order here">
+        <input type="hidden" name="ID" value="@Model.order.ID" />
+        <button type="submit" class="btn btn-secondary" asp-page-handler="Checkout">Checkout</button>
+    </form>
+    if (Model.order.Client.Subscribtion == "premium")
+    {
+        <h3 style="color:white">Because you have a premium subscription you are paying 15% off !</h3>
+    }
+    <h3 style="color: yellow;">Total price: @Model.order.TotalPrice.ToString("0.00")</h3>
+
+}
+else 
+{
+    <h1 style="color:white">Your cart is currently empty</h1>
+    <h2 style="color:white">You have some shopping to do :)</h2>
+
+}
+
+
+
+
+
+

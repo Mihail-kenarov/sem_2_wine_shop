@@ -4,11 +4,11 @@ using Microsoft.Data.SqlClient;
 
 namespace DataAccessLayer.Repositories
 {
-    public class WineCellerRepo : ConnectionsString, IWineCellerRepo
+    public class WineCellerRepo : IWineCellerRepo
     {
         public void Create(WineCeller wineCeller)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
 
             using (sqlConnection)
@@ -37,7 +37,7 @@ namespace DataAccessLayer.Repositories
         {
 
             List<WineCeller> winesCellers = new List<WineCeller>();
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
@@ -69,7 +69,7 @@ namespace DataAccessLayer.Repositories
 
         public void Update(WineCeller wineCeller)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
 
             using (sqlConnection)
@@ -101,7 +101,7 @@ namespace DataAccessLayer.Repositories
         {
 
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
@@ -124,7 +124,7 @@ namespace DataAccessLayer.Repositories
         {
             WineCeller wineCeller = null;
 
-            using (SqlConnection sqlConnection = GetSqlconnection())
+            using (SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr))
             {
                 sqlConnection.Open();
 
@@ -166,7 +166,7 @@ namespace DataAccessLayer.Repositories
         {
             WineCeller? wineCeller = null;
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {

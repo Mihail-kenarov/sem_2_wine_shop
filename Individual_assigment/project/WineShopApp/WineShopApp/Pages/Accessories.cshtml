@@ -1,0 +1,30 @@
+﻿@page
+@using BusinessLogic.Entities;
+@using BusinessLogic;
+@using WineShopApp.Entities;
+
+
+
+@model WineShopApp.Pages.AccessoriesModel
+@{
+	ViewData["Title"] = "Accessories";
+}
+
+<div class="row card_spacing" style="margin:auto 50px;">
+    @foreach (AccessoryDTO accessory in Model.Accessories)
+    {
+        var Photopath = "~/images/Accessory.jpg";
+
+        <div class="col-md-4">
+            <div class="card mb-3">
+             <img src="@Photopath" class="card-img-top imageShown" alt="@accessory.Name" asp-append-version="true">
+                <div class="card-body">
+                    <h5 class="card-title">@accessory.Name</h5>
+                    <p class="card-text">@accessory.Price</p>
+                    <a asp-page="/AccessoryMoreDetails" asp-route-ID="@accessory.ID" class="btn btn-primary">View</a>
+                    <a method="post" asp-page-handler="AddToCart" class="btn btn-secondary" asp-route-ID="@accessory.ID">Add to cart</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

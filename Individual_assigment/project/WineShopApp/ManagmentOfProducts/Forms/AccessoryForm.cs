@@ -66,85 +66,81 @@ namespace ManagmentOfProducts.Forms
             }
         }
 
-            private void btnLoadAccessory_Click(object sender, EventArgs e)
+        private void btnLoadAccessory_Click(object sender, EventArgs e)
+        {
+            try
             {
-                try
+                foreach (Accessory accessory in AccessoryManager.GetAll())
                 {
-                    foreach (Accessory accessory in AccessoryManager.GetAll())
+                    if (accessory.Id == Convert.ToInt32(txtAccessoryIdPick.Text))
                     {
-                        if (accessory.Id == Convert.ToInt32(txtAccessoryIdPick.Text))
-                        {
-                            txtAccessoryName.Text = accessory.Name;
-                            txtAcessoryType.Text = accessory.Type;
-                            txtAccessoryAmount.Text = accessory.Amount.ToString();
-                            txtAccessoryDescription.Text = accessory.Description;
-                            nudAcessoryPrice.Text = accessory.Price.ToString();
-                            return;
-                        }
+                        txtAccessoryName.Text = accessory.Name;
+                        txtAcessoryType.Text = accessory.Type;
+                        txtAccessoryAmount.Text = accessory.Amount.ToString();
+                        txtAccessoryDescription.Text = accessory.Description;
+                        nudAcessoryPrice.Text = accessory.Price.ToString();
+                        return;
                     }
-                    MessageBox.Show("There are no accessories with the given ID!");
                 }
-                catch (Exception)
-                {
-                    MessageBox.Show("Enter ID first");
-                }
-
-
-
-
+                MessageBox.Show("There are no accessories with the given ID!");
             }
-
-            private void btnDeleteAccessory_Click(object sender, EventArgs e)
+            catch (Exception)
             {
-                try
-                {
-                    if (lbAccessory.SelectedItem != null)
-                    {
-                        foreach (Accessory accessory in AccessoryManager.GetAll())
-                        {
-                            if (AccessoryManager.AccessoryInfo(accessory) == lbAccessory.SelectedItem.ToString())
-                            {
-                                AccessoryManager.DeleteAccessory(Convert.ToInt32(txtAccessoryIdPick.Text));
-                                MessageBox.Show("Accessory removed successfully");
-                                ShowAccessory(AccessoryManager.GetAll(), lbAccessory);
-                            }
-
-                        }
-
-                    }
-                    else
-                    {
-                        MessageBox.Show("please select an accessory you would like to remove from the list box");
-                    }
-
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                MessageBox.Show("Enter ID first");
             }
-
-
-            public void ShowAccessory(List<Accessory> accessories, ListBox lbAccessories)
-            {
-                lbAccessories.Items.Clear();
-                foreach (Accessory accessory in accessories)
-                {
-                    lbAccessories.Items.Add(AccessoryManager.AccessoryInfo(accessory));
-                    txtAccessoryName.Text = "";
-                    txtAccessoryDescription.Text = "";
-                    txtAcessoryType.Text = "";
-                    txtAccessoryAmount.Text = "";
-                    nudAcessoryPrice.Text = "";
-
-                }
-            }
-
-
 
 
 
 
         }
+
+        private void btnDeleteAccessory_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (lbAccessory.SelectedItem != null)
+                {
+                    foreach (Accessory accessory in AccessoryManager.GetAll())
+                    {
+                        if (AccessoryManager.AccessoryInfo(accessory) == lbAccessory.SelectedItem.ToString())
+                        {
+                            AccessoryManager.DeleteAccessory(Convert.ToInt32(txtAccessoryIdPick.Text));
+                            MessageBox.Show("Accessory removed successfully");
+                            ShowAccessory(AccessoryManager.GetAll(), lbAccessory);
+                        }
+
+                    }
+
+                }
+                else
+                {
+                    MessageBox.Show("please select an accessory you would like to remove from the list box");
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+
+        public void ShowAccessory(List<Accessory> accessories, ListBox lbAccessories)
+        {
+            lbAccessories.Items.Clear();
+            foreach (Accessory accessory in accessories)
+            {
+                lbAccessories.Items.Add(AccessoryManager.AccessoryInfo(accessory));
+                txtAccessoryName.Text = "";
+                txtAccessoryDescription.Text = "";
+                txtAcessoryType.Text = "";
+                txtAccessoryAmount.Text = "";
+                nudAcessoryPrice.Text = "";
+
+            }
+        }
+
+     
     }
+}

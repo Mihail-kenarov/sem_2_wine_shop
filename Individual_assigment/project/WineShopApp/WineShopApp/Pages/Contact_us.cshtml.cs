@@ -16,10 +16,6 @@ namespace WineShopApp.Pages
         {
 
         }
-
-
-
-
         public IActionResult OnPost()
         {
 			TempData["ContactMessage"] = $"Hello {ContactFeedback.Name}, thank you for contacting us! We will respond within 2 working days to {ContactFeedback.Email}";

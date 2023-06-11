@@ -12,8 +12,8 @@ namespace UnitTesting
         private WineCellerManagment _wcManagment;
 
 
-        [TestMethod]
-        public void Initialize()
+        [TestInitialize]
+        public void SetUp()
         {
             _wcRepo = new FakeWineCellerRepo();
             _wcManagment = new WineCellerManagment(_wcRepo);
@@ -77,6 +77,8 @@ namespace UnitTesting
             Assert.AreEqual(nameToGet, result.Name);
         }
 
+
+        [TestMethod]
         public void UpdateWC()
         {
             // Arrange

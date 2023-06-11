@@ -8,7 +8,8 @@ namespace BusinessLogic.Entities
 {
     public class Accessory : Product
     {
-       
+        private string type;
+
         public Accessory(int id, int amount, string name, string description, double price, string type)
         : base(id, amount, name, description, price)
         {
@@ -21,7 +22,11 @@ namespace BusinessLogic.Entities
             Type = type;
         }
 
-        public string Type { get; set; }
+        public string Type { get => type; set { if (string.IsNullOrEmpty(value)) throw new ArgumentException("Invalid validation"); type = value; } }
 
+        public override string? ToString()
+        {
+            return " Name: " + this.Name + " Price: " + this.Price;
+        }
     }
 }

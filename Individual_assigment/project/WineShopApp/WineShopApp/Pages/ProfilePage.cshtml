@@ -1,0 +1,18 @@
+﻿@page 
+@model WineShopApp.Pages.ProfilePageModel
+@{
+} 
+<div class="form-container">
+    <h1 style="color: white;" : @Model.client.Username</h1>
+    <form method="post">
+        <div class="form-group">
+            <label for="email" value="@Model.client.Email">Email:</label>
+            <input type="email" id="email" name="Email" class="form-control" value="@Model.client.Email" />
+        </div>
+        <div class="form-group">
+            <label for="fullName" value="@Model.client.Username">Full Name:</label>
+            <input type="text" id="fullName" name="FullName" class="form-control" value="@Model.client.Username" />
+        </div>
+        <input type="submit" class="btn btn-primary btn-block mt-3" value="Save changes">
+    </form>
+</div>

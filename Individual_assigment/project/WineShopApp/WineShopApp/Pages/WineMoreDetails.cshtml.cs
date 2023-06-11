@@ -1,5 +1,6 @@
 using BusinessLogic.Entities;
 using BusinessLogic.Interfaces;
+using BusinessLogic.ManagerInterfaces;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -8,19 +9,19 @@ namespace WineShopApp.Pages
 {
     public class WineMoreDetailsModel : PageModel
     {
-        private readonly IWineRepo wineRepository;
+        private readonly IWineManager wineManager;
     
 
-        public WineMoreDetailsModel(IWineRepo wineRepository)
+        public WineMoreDetailsModel(IWineManager wineManager)
         {
-            this.wineRepository = wineRepository;
+            this.wineManager = wineManager;
         }
 
         public Wine Wine { get; private set; }
 
         public void OnGet(int id)
         {
-           Wine =  wineRepository.GetById(id); 
+           Wine = wineManager.GetWineById(id); 
         }
     }
 }

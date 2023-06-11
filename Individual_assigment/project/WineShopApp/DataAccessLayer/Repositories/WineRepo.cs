@@ -4,14 +4,13 @@ using Microsoft.Data.SqlClient;
 
 namespace DataAccessLayer.Repositories
 {
-    public class WineRepo : ConnectionsString, IWineRepo
+    public class WineRepo : IWineRepo
     {
-
         public void Create(Wine wine,WineCeller wineCeller)
         {
             SqlConnection sqlConnection;
 
-            using (SqlConnection connection = GetSqlconnection())
+            using (SqlConnection connection = new SqlConnection(ConnString.sqlConnStr))
             {
                 connection.Open();
 
@@ -65,7 +64,7 @@ namespace DataAccessLayer.Repositories
         {
             List<Wine> wines = new List<Wine>();
             WineCellerRepo wineCellerRepo = new WineCellerRepo();
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 string sql = "SELECT * FROM Wine JOIN Product ON Wine.ID = Product.product_id";
@@ -103,7 +102,7 @@ namespace DataAccessLayer.Repositories
         public void Update(Wine wine)
         {
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {
@@ -140,7 +139,7 @@ namespace DataAccessLayer.Repositories
 
         public void Delete(int id)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
@@ -167,11 +166,11 @@ namespace DataAccessLayer.Repositories
             WineCeller wineCeller;
             WineCellerRepo wineCellerRepo = new WineCellerRepo();
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             sqlConnection.Open();
             using (sqlConnection)
             {
-                string sql = "SELECT * FROM Wine JOIN Product ON Wine.ID = Product.product_id WHERE Accessory.ID = @id";
+                string sql = "SELECT * FROM Wine JOIN Product ON Wine.ID = Product.product_id WHERE Wine.ID = @id";
 
                 SqlCommand cmd = new SqlCommand(sql, sqlConnection);
 
@@ -205,6 +204,15 @@ namespace DataAccessLayer.Repositories
 
             return wine;
         }
+
+
+
+
+
+
+
+
+
 
 
     }

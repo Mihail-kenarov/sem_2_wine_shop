@@ -41,9 +41,16 @@ namespace BusinessLogic.Managers
             accessoryRepoInterface.Update(accessory);
         }
 
+        public Accessory GetByID(int accessory_id)
+        {
+            return accessoryRepoInterface.GetById(accessory_id);
+        }
+
         public string AccessoryInfo(Accessory accessory)
         {
-            return $"ID: {accessory.Id}, Name: {accessory.Name}, Type: {accessory.Type}";
+            return $"ID: {accessory.Id}, Name: {accessory.Name}, Price: {accessory.Price}";
         }
+
+       
     }
 }

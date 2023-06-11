@@ -50,9 +50,10 @@
             // 
             // btnDeleteAccessory
             // 
-            btnDeleteAccessory.Location = new Point(314, 428);
+            btnDeleteAccessory.Location = new Point(275, 321);
+            btnDeleteAccessory.Margin = new Padding(3, 2, 3, 2);
             btnDeleteAccessory.Name = "btnDeleteAccessory";
-            btnDeleteAccessory.Size = new Size(310, 43);
+            btnDeleteAccessory.Size = new Size(271, 32);
             btnDeleteAccessory.TabIndex = 74;
             btnDeleteAccessory.Text = "Delete Accessory";
             btnDeleteAccessory.UseVisualStyleBackColor = true;
@@ -60,9 +61,10 @@
             // 
             // btnUpdateAccessory
             // 
-            btnUpdateAccessory.Location = new Point(314, 258);
+            btnUpdateAccessory.Location = new Point(275, 194);
+            btnUpdateAccessory.Margin = new Padding(3, 2, 3, 2);
             btnUpdateAccessory.Name = "btnUpdateAccessory";
-            btnUpdateAccessory.Size = new Size(310, 43);
+            btnUpdateAccessory.Size = new Size(271, 32);
             btnUpdateAccessory.TabIndex = 73;
             btnUpdateAccessory.Text = "Update Accessory";
             btnUpdateAccessory.UseVisualStyleBackColor = true;
@@ -70,9 +72,10 @@
             // 
             // btnAddAccessory
             // 
-            btnAddAccessory.Location = new Point(23, 258);
+            btnAddAccessory.Location = new Point(20, 194);
+            btnAddAccessory.Margin = new Padding(3, 2, 3, 2);
             btnAddAccessory.Name = "btnAddAccessory";
-            btnAddAccessory.Size = new Size(271, 43);
+            btnAddAccessory.Size = new Size(237, 32);
             btnAddAccessory.TabIndex = 72;
             btnAddAccessory.Text = "Add Accessory";
             btnAddAccessory.UseVisualStyleBackColor = true;
@@ -81,99 +84,107 @@
             // lbAccessory
             // 
             lbAccessory.FormattingEnabled = true;
-            lbAccessory.ItemHeight = 20;
-            lbAccessory.Location = new Point(662, 44);
+            lbAccessory.ItemHeight = 15;
+            lbAccessory.Location = new Point(579, 33);
+            lbAccessory.Margin = new Padding(3, 2, 3, 2);
             lbAccessory.Name = "lbAccessory";
-            lbAccessory.Size = new Size(423, 504);
+            lbAccessory.Size = new Size(418, 379);
             lbAccessory.TabIndex = 71;
+            
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(27, 124);
+            label4.Location = new Point(24, 93);
             label4.Name = "label4";
-            label4.Size = new Size(88, 20);
+            label4.Size = new Size(70, 15);
             label4.TabIndex = 64;
             label4.Text = "Description:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(50, 88);
+            label2.Location = new Point(44, 66);
             label2.Name = "label2";
-            label2.Size = new Size(65, 20);
+            label2.Size = new Size(54, 15);
             label2.TabIndex = 62;
             label2.Text = "Amount:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(63, 49);
+            label1.Location = new Point(55, 37);
             label1.Name = "label1";
-            label1.Size = new Size(52, 20);
+            label1.Size = new Size(42, 15);
             label1.TabIndex = 60;
             label1.Text = "Name:";
             // 
             // nudAcessoryPrice
             // 
             nudAcessoryPrice.DecimalPlaces = 2;
-            nudAcessoryPrice.Location = new Point(410, 47);
+            nudAcessoryPrice.Location = new Point(359, 35);
+            nudAcessoryPrice.Margin = new Padding(3, 2, 3, 2);
             nudAcessoryPrice.Name = "nudAcessoryPrice";
-            nudAcessoryPrice.Size = new Size(203, 27);
+            nudAcessoryPrice.Size = new Size(178, 23);
             nudAcessoryPrice.TabIndex = 76;
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(360, 49);
+            label7.Location = new Point(315, 37);
             label7.Name = "label7";
-            label7.Size = new Size(44, 20);
+            label7.Size = new Size(36, 15);
             label7.TabIndex = 75;
             label7.Text = "Price:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(355, 92);
+            label5.Location = new Point(311, 69);
             label5.Name = "label5";
-            label5.Size = new Size(43, 20);
+            label5.Size = new Size(34, 15);
             label5.TabIndex = 78;
             label5.Text = "Type:";
             // 
             // txtAcessoryType
             // 
-            txtAcessoryType.Location = new Point(410, 85);
+            txtAcessoryType.Location = new Point(359, 64);
+            txtAcessoryType.Margin = new Padding(3, 2, 3, 2);
             txtAcessoryType.Name = "txtAcessoryType";
-            txtAcessoryType.Size = new Size(203, 27);
+            txtAcessoryType.Size = new Size(178, 23);
             txtAcessoryType.TabIndex = 77;
             // 
             // txtAccessoryName
             // 
-            txtAccessoryName.Location = new Point(121, 47);
+            txtAccessoryName.Location = new Point(106, 35);
+            txtAccessoryName.Margin = new Padding(3, 2, 3, 2);
             txtAccessoryName.Name = "txtAccessoryName";
-            txtAccessoryName.Size = new Size(203, 27);
+            txtAccessoryName.Size = new Size(178, 23);
             txtAccessoryName.TabIndex = 79;
             // 
             // txtAccessoryAmount
             // 
-            txtAccessoryAmount.Location = new Point(121, 85);
+            txtAccessoryAmount.Location = new Point(106, 64);
+            txtAccessoryAmount.Margin = new Padding(3, 2, 3, 2);
             txtAccessoryAmount.Name = "txtAccessoryAmount";
-            txtAccessoryAmount.Size = new Size(203, 27);
+            txtAccessoryAmount.Size = new Size(178, 23);
             txtAccessoryAmount.TabIndex = 80;
             // 
             // txtAccessoryDescription
             // 
-            txtAccessoryDescription.Location = new Point(121, 124);
+            txtAccessoryDescription.Location = new Point(106, 93);
+            txtAccessoryDescription.Margin = new Padding(3, 2, 3, 2);
             txtAccessoryDescription.Multiline = true;
             txtAccessoryDescription.Name = "txtAccessoryDescription";
-            txtAccessoryDescription.Size = new Size(203, 96);
+            txtAccessoryDescription.Size = new Size(178, 73);
             txtAccessoryDescription.TabIndex = 81;
             // 
             // btnLoadAccessory
             // 
-            btnLoadAccessory.Location = new Point(23, 428);
+            btnLoadAccessory.Location = new Point(20, 321);
+            btnLoadAccessory.Margin = new Padding(3, 2, 3, 2);
             btnLoadAccessory.Name = "btnLoadAccessory";
-            btnLoadAccessory.Size = new Size(271, 43);
+            btnLoadAccessory.Size = new Size(237, 32);
             btnLoadAccessory.TabIndex = 82;
             btnLoadAccessory.Text = "Load Accessory";
             btnLoadAccessory.UseVisualStyleBackColor = true;
@@ -181,25 +192,26 @@
             // 
             // txtAccessoryIdPick
             // 
-            txtAccessoryIdPick.Location = new Point(104, 381);
+            txtAccessoryIdPick.Location = new Point(91, 286);
+            txtAccessoryIdPick.Margin = new Padding(3, 2, 3, 2);
             txtAccessoryIdPick.Name = "txtAccessoryIdPick";
-            txtAccessoryIdPick.Size = new Size(147, 27);
+            txtAccessoryIdPick.Size = new Size(129, 23);
             txtAccessoryIdPick.TabIndex = 83;
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(27, 384);
+            label6.Location = new Point(24, 288);
             label6.Name = "label6";
-            label6.Size = new Size(71, 20);
+            label6.Size = new Size(55, 15);
             label6.TabIndex = 84;
             label6.Text = "Select ID:";
             // 
             // AccessoryForm
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1206, 643);
+            ClientSize = new Size(1055, 482);
             Controls.Add(label6);
             Controls.Add(txtAccessoryIdPick);
             Controls.Add(btnLoadAccessory);
@@ -217,6 +229,7 @@
             Controls.Add(label4);
             Controls.Add(label2);
             Controls.Add(label1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "AccessoryForm";
             Text = "Accessory";
             ((System.ComponentModel.ISupportInitialize)nudAcessoryPrice).EndInit();
