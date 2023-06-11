@@ -27,7 +27,7 @@ namespace ManagmentOfProducts.Forms
 
 
             Wine wine;
-            if (string.IsNullOrWhiteSpace(txtAddWineAmount.Text) || string.IsNullOrWhiteSpace(txtAddWineBottleSize.Text)
+            if (string.IsNullOrWhiteSpace(nudAddWineAmount.Text) || string.IsNullOrWhiteSpace(nudAddWineBottleSize.Text)
              || string.IsNullOrWhiteSpace(txtAddWineClassification.Text) || string.IsNullOrWhiteSpace(txtAddWineDescription.Text)
              || string.IsNullOrWhiteSpace(txtAddWineName.Text) || string.IsNullOrWhiteSpace(txtAddWinePhotoPath.Text)
              || string.IsNullOrWhiteSpace(txtAddWineRegion.Text) || string.IsNullOrWhiteSpace(txtAddWineSortGrape.Text))
@@ -44,14 +44,15 @@ namespace ManagmentOfProducts.Forms
             {
 
                 WineCeller wineCeller = GetSelectedWineCeller(WineCellerManager.GetAll(), lbWineCellerChoice);
-                wine = new Wine(Convert.ToInt32(txtAddWineAmount.Text), txtAddWineName.Text, Convert.ToDouble(nudAddWinePrice.Text),
+                wine = new Wine(Convert.ToInt32(nudAddWineAmount.Text), txtAddWineName.Text, Convert.ToDouble(nudAddWinePrice.Text),
                 txtAddWineRegion.Text, txtAddWineClassification.Text, txtAddWineSortGrape.Text,
-                Convert.ToDouble(nudAddWineAlcohol.Text), Convert.ToDouble(nudAddWineET.Text), Convert.ToInt32(txtAddWineBottleSize.Text), wineCeller,
+                Convert.ToDouble(nudAddWineAlcohol.Text), Convert.ToDouble(nudAddWineET.Text), Convert.ToInt32(nudAddWineBottleSize.Text), wineCeller,
                 txtAddWinePhotoPath.Text,
                 txtAddWineDescription.Text);
 
                 try
                 {
+
                     WineManagment.AddWine(wine, wineCeller);
                     ShowWineCellar(WineCellerManager.GetAll(), lbWineCellerChoice);
                     ShowWine(WineManagment.GetAll(), lbAddWine);
@@ -73,8 +74,8 @@ namespace ManagmentOfProducts.Forms
             {
                 lbWinesBox.Items.Add(WineManagment.WineInfo(wine));
             }
-            txtAddWineAmount.Text = "";
-            txtAddWineBottleSize.Text = "";
+            nudAddWineAmount.Text = "";
+            nudAddWineBottleSize.Text = "";
             txtAddWineClassification.Text = "";
             txtAddWineDescription.Text = "";
             txtAddWineName.Text = "";

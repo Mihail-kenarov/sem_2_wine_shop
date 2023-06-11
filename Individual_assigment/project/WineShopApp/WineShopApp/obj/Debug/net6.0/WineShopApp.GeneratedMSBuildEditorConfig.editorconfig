@@ -20,6 +20,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRfdXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Accessories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/AccessoryMoreDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjZXNzb3J5TW9yZURldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Contact_us.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29udGFjdF91cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,8 +44,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9naW4uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTG9nb3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Order.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/ProfilePage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVnaXN0ZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/Shared/_ValidationScriptsPartial.cshtml]
@@ -46,6 +70,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/ThankYou.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhhbmtZb3UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/ThankYouOrder.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVGhhbmtZb3VPcmRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/mihai/Desktop/Semester_2_IA/individual_assigment_s2/Individual_assigment/project/WineShopApp/WineShopApp/Pages/WineMoreDetails.cshtml]

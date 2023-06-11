@@ -1,9 +1,4 @@
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\CoverletSourceRootsMapping
-C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.csproj.AssemblyReference.cache
-C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.AssemblyInfoInputs.cache
-C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.AssemblyInfo.cs
-C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.csproj.CoreCompileInputs.cache
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\testhost.dll
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\testhost.exe
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
@@ -130,6 +125,11 @@ C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigmen
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\DataAccessLayer.pdb
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\BusinessLogic.pdb
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.csproj.AssemblyReference.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.AssemblyInfoInputs.cache
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.AssemblyInfo.cs
+C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.csproj.CoreCompileInputs.cache
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.csproj.CopyComplete
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\UnitTesting.dll
 C:\Users\mihai\Desktop\Semester_2_IA\individual_assigment_s2\Individual_assigment\project\WineShopApp\UnitTesting\obj\Debug\net6.0\refint\UnitTesting.dll

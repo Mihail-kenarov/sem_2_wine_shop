@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "6It1i47TrbhpCPsFrmD9WTX/f8jBjj/vD30WYPDWeGQ=",
+  "Hash": "4iD7G4yOE17zLbRWIWLIULTKh4DTzEl0VBT9fvmNF2o=",
   "Source": "WineShopApp",
   "BasePath": "_content/WineShopApp",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\about_us_2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\project\\WineShopApp\\WineShopApp\\wwwroot\\images\\Accessory.jpg",
+      "SourceId": "WineShopApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\project\\WineShopApp\\WineShopApp\\wwwroot\\",
+      "BasePath": "_content/WineShopApp",
+      "RelativePath": "images/Accessory.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Accessory.jpg"
     },
     {
       "Identity": "C:\\Users\\mihai\\Desktop\\Semester_2_IA\\individual_assigment_s2\\Individual_assigment\\project\\WineShopApp\\WineShopApp\\wwwroot\\images\\slideshow.jpg",

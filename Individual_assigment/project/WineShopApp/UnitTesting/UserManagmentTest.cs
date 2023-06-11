@@ -50,7 +50,6 @@ namespace UnitTesting
             Assert.IsNull(_userRepo.GetById(userIdToDelete));
         }
 
-
         [TestMethod]
         public void GetAllUsers()
         {

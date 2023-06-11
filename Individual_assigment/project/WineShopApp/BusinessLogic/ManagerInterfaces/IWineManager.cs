@@ -16,6 +16,6 @@ namespace BusinessLogic.ManagerInterfaces
         List<Wine> GetAll();
         string WineInfo (Wine wine);
         Wine GetWineById(int wine_id);
-
+        List<Wine> GetAllByFilters(string keyword, string price, int bottleSize);
     }
 }

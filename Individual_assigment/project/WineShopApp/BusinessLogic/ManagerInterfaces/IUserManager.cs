@@ -16,6 +16,6 @@ namespace BusinessLogic.ManagerInterfaces
         string Info(User user);
         User GetUserById(int user_id);
         User GetUserByUsername(string username);
-
+        User? ValidateUser(string username, string password);
     }
 }

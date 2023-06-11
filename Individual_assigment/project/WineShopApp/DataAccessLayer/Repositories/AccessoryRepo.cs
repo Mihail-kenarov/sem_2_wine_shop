@@ -2,16 +2,19 @@
 using BusinessLogic.RepoInterfaces;
 using Microsoft.Data.SqlClient;
 
+
 namespace DataAccessLayer.Repositories
 {
-    public class AccessoryRepo : ConnectionsString, IAccessoryRepo
+
+    public class AccessoryRepo : IAccessoryRepo
     {
 
         public void Create(Accessory accessory)
         {
+
             SqlConnection sqlConnection;
 
-            using (SqlConnection connection = GetSqlconnection())
+            using (SqlConnection connection = new SqlConnection(ConnString.sqlConnStr))
             {
                 connection.Open();
 
@@ -55,7 +58,7 @@ namespace DataAccessLayer.Repositories
         {
 
             List<Accessory> accessories = new List<Accessory>();
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
@@ -87,7 +90,7 @@ namespace DataAccessLayer.Repositories
 
         public void Update(Accessory accessory)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {
@@ -116,7 +119,7 @@ namespace DataAccessLayer.Repositories
 
         public void Delete(int id)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
 
@@ -140,9 +143,10 @@ namespace DataAccessLayer.Repositories
 
         public Accessory GetById(int accessory_id)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
+                sqlConnection.Open();
                 string sql = "SELECT * FROM Accessory JOIN Product ON Accessory.ID = Product.product_id WHERE Accessory.ID = @id";
                 SqlCommand cmd = new SqlCommand(sql, sqlConnection);
                 cmd.Parameters.AddWithValue("@id", accessory_id);
@@ -169,7 +173,7 @@ namespace DataAccessLayer.Repositories
 
         public Accessory GetByName(string name)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {

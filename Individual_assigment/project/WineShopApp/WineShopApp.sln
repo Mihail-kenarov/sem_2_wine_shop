@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DataAccessLayer", "DataAcce
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UnitTesting", "UnitTesting\UnitTesting.csproj", "{92321560-3307-4CFF-A451-DECB3B6D90EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManagmentOfProducts", "ManagmentOfProducts\ManagmentOfProducts.csproj", "{2CE134E1-7334-4DDF-B785-FCF26CBFE9BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ManagmentOfProducts", "ManagmentOfProducts\ManagmentOfProducts.csproj", "{2CE134E1-7334-4DDF-B785-FCF26CBFE9BA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

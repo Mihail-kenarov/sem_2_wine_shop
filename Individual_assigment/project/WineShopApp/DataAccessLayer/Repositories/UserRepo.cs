@@ -1,20 +1,20 @@
 ﻿using BusinessLogic.Entities;
 using BusinessLogic.Interfaces;
 using Microsoft.Data.SqlClient;
-using System.Text;
 
 namespace DataAccessLayer
 {
-    public class UserRepo : ConnectionsString , IUserRepo
+    public class UserRepo : IUserRepo
     {
         public void Create(User user)
         {
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
 
             using (sqlConnection)
             {
+
                 sqlConnection.Open();
 
                 string sql = "INSERT INTO dbo.Workers (fullname, username, password, salt, role) values (@fullName, @userName, @password, @salt, @role);";
@@ -42,11 +42,11 @@ namespace DataAccessLayer
         public List<User> GetAll()
         {
             List<User> users = new List<User>();
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
-                string sql = "Select  * from Workers";
+                string sql = "Select * from Workers";
                 SqlCommand cmd = new SqlCommand(sql, sqlConnection);
                 SqlDataReader reader = cmd.ExecuteReader();
                 while (reader.Read())
@@ -57,7 +57,7 @@ namespace DataAccessLayer
                     string username = reader["username"].ToString();
 
                     byte[] password = (byte[])reader["password"];
-                    byte[] salt= (byte[])reader["salt"];
+                    byte[] salt = (byte[])reader["salt"];
 
                     string role = reader["role"].ToString();
 
@@ -67,16 +67,14 @@ namespace DataAccessLayer
                 }
                 reader.Close();
                 return users;
-                
+
             }
         }
-
-
 
         public void Update(User user)
         {
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {
@@ -101,7 +99,7 @@ namespace DataAccessLayer
 
         public void Delete(int user_id)
         {
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
             using (sqlConnection)
             {
                 sqlConnection.Open();
@@ -109,7 +107,7 @@ namespace DataAccessLayer
                 SqlCommand cmd = new SqlCommand(sql, sqlConnection);
                 cmd.Parameters.AddWithValue("@id", user_id);
                 cmd.ExecuteNonQuery();
-                
+
             }
         }
 
@@ -118,7 +116,7 @@ namespace DataAccessLayer
         {
             User? user = null;
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            SqlConnection sqlConnection = new SqlConnection(ConnString.sqlConnStr);
 
             using (sqlConnection)
             {
@@ -137,88 +135,66 @@ namespace DataAccessLayer
                 string username = reader["username"].ToString();
 
                 byte[] password = (byte[])reader["password"];
-               
+
 
                 byte[] salt = (byte[])reader["salt"];
 
                 string role = reader["role"].ToString();
 
-                user = new User(id,fullname, username, password, salt, role);
+                user = new User(id, fullname, username, password, salt, role);
 
 
                 return user;
 
             }
         }
-
-
-        public User? GetUsername(string Username)
+        public User? GetUsername(string username)
         {
             User? user = null;
 
-            SqlConnection sqlConnection = GetSqlconnection();
+            string connectionString = "Server=mssqlstud.fhict.local;Database=dbi509460_iassigment;User Id=dbi509460_iassigment;Password=mk050203; TrustServerCertificate=True";
+            string sql = "SELECT * FROM dbo.Workers WHERE username = @Username";
 
-            using (sqlConnection)
+            using (SqlConnection connection = new SqlConnection(connectionString))
             {
+                using (SqlCommand command = new SqlCommand(sql, connection))
+                {
+                    command.Parameters.AddWithValue("@Username", username);
 
+                    try
+                    {
+                        connection.Open();
+                        SqlDataReader reader = command.ExecuteReader();
 
-                sqlConnection.Open();
-                string sql = "Select * From Workers where username=@Username";
-                SqlCommand cmd = new SqlCommand(sql, sqlConnection);
+                        if (reader.HasRows)
+                        {
+                            reader.Read();
 
-                cmd.Parameters.AddWithValue("@Username", Username);
+                            int id = Convert.ToInt32(reader["user_id"]);
+                            string fullname = reader["fullname"].ToString();
+                            string fetchedUsername = reader["username"].ToString();
+                            byte[] password = (byte[])reader["password"];
+                            byte[] salt = (byte[])reader["salt"];
+                            string role = reader["role"].ToString();
 
-                SqlDataReader reader = cmd.ExecuteReader();
+                            user = new User(id, fullname, fetchedUsername, password, salt, role);
+                        }
 
-                int id = Convert.ToInt32(reader["user_id"]);
-
-                string fullname = reader["fullname"].ToString();
-                string username = reader["username"].ToString();
-
-
-                byte[] password = (byte[])reader["password"];
-
-                byte[] salt = (byte[])reader["salt"];
-               
-
-                string role = reader["role"].ToString();
-
-                user = new User(id,fullname ,username, password, salt, role);
-
-
-                return user;
-
+                        reader.Close();
+                    }
+                    catch (Exception ex)
+                    {
+                        // Handle any exceptions or log the error message
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
+                }
             }
 
+            return user;
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        
 
 
 

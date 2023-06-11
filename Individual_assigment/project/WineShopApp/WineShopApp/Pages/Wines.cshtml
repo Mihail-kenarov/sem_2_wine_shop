@@ -1,6 +1,9 @@
 ﻿@page
+@using Microsoft.AspNetCore.Authentication
+@using System.Security.Claims
 @using BusinessLogic.Entities;
 @using BusinessLogic;
+@using WineShopApp.Entities;
 
 @model WineShopApp.Pages.WinesModel
 @{
@@ -8,10 +11,37 @@
 }
 
 
+<form method="post" class="form-inline">
+    <div class="form-group">
+        <label asp-for="Keyword" class="form-label">Your Keyword</label>
+        <input asp-for="Keyword" type="text" id="form3Example1cg" class="form-control form-control-lg" />
+    </div>
+    <div class="form-group ml-2">
+        <label asp-for="@Model.selectedBottleSize" class="form-label text-white">Bottle Size</label>
+        <select asp-for="@Model.selectedBottleSize" class="form-control form-control-sm">
+            <option value="0">Any</option>
+            <option value="500">500 ml</option>
+            <option value="750">750 ml</option>
+            <option value="1000">1000 ml</option>
+        </select>
+    </div>
+    <div class="form-group ml-2">
+        <label asp-for="@Model.priceRange" class="form-label text-white">Price Range</label>
+        <select asp-for="@Model.priceRange" class="form-control form-control-sm">
+            <option value="Any">Any</option>
+            <option value="0-10">0 - 10</option>
+            <option value="10-20">10 - 20</option>
+            <option value="20-30">20 - 30</option>
+            <option value="30+">30+</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary ml-2">Search</button>
+</form>
 <div class="row card_spacing" style="margin:auto 50px;">
-    @foreach (Wine wine in Model.Wines)
+    @foreach (WineDTO wine in Model.Wines)
     {
-        var Photopath = "~/images/" + wine.PhotoPath;
+        
+        var Photopath = "~/images/Wine_3.jpg";
 
         <div class="col-md-4">
             <div class="card mb-3">
@@ -19,8 +49,9 @@
                 <div class="card-body">
                     <h5 class="card-title">@wine.Name</h5>
                     <p class="card-text">@wine.Price</p>
-                    <a asp-page="/WineMoreDetails" asp-route-ID="@wine.Id" class="btn btn-primary">View</a>
-                    <a href="#" class="btn btn-secondary">Add to cart</a>
+                    <a asp-page="/WineMoreDetails" asp-route-ID="@wine.ID" class="btn btn-primary">View</a>
+                    
+                    <a method="post" asp-page-handler="AddToCart" class="btn btn-secondary" asp-route-ID="@wine.ID" >Add to cart</a>
                 </div>
             </div>
         </div>
